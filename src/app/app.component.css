@@ -1,3 +1,13 @@
-.userTitle{
-    color: blue;
+.test {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.box
+{
+    border-color: red;
+    border-width: 1px;
+    background-color: #BBFF00;
 }
