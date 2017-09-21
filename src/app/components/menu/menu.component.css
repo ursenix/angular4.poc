@@ -1,0 +1,11 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menuItem
+{
+    border-color: red;
+    border-width: 1px;
+    background-color: #BBFF00;
+}

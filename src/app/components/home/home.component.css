@@ -1,0 +1,8 @@
+
+.pageHeader{
+    display: grid;
+    background-color: #010233;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    height: 300px;
+}
