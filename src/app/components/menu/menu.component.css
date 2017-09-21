@@ -1,11 +1,24 @@
 .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
+    display: flex;
+    background-color: orange;
+    height: 50px;
 }
 
-.menuItem
+.menu a{
+    
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    background-color: gray;
+    
+}
+
+/* .menuItem
 {
     border-color: red;
     border-width: 1px;
     background-color: #BBFF00;
-}
+} */
