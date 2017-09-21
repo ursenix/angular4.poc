@@ -2,25 +2,43 @@
 .pageHeader{
     display: grid;
     background-color: #010233;
-    
-    
     height: 300px;
-    
+}
+
+.image{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profilePic{
+    grid-column: 2;
+    border-width: 1px;
+    border-color: white;
+    margin-top: -100px;
+    margin-bottom: 50px;
 }
 
 .boxContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    /* align-content: space-around; */
+    justify-content: space-around;
 }
 
 .box1{
     background-color: red;
+    /* margin-left: 50px; */
+    height: 300px;
 }
 
 .box2{
     background-color: #2C11C5;
+    height: 300px;
 }
 
 .box3{
     background-color: #BD19A1;
+    /* margin-right: 50px; */
+    height: 300px;
 }
