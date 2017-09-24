@@ -1,17 +1,6 @@
-.menu {
-    
-    display: flex;
+.menuStyle{
+    margin: 0px;
     background-color: orange;
-    height: 50px;
+    border: 0px solid;
 }
 
-.menu a{
-    
-    padding: 5px;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    background-color: gray;
-    
-}
