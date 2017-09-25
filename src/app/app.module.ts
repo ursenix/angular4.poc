@@ -14,6 +14,7 @@ import {routes} from './app.routes';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CssgridComponent } from './components/cssgrid/cssgrid.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CssgridComponent } from './components/cssgrid/cssgrid.component';
     UserDetailsComponent,
     HomeComponent,
     MenuComponent,
-    CssgridComponent
+    CssgridComponent,
+    FooterComponent
     
   ],
   imports: [
