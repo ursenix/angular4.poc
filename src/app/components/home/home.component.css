@@ -8,6 +8,7 @@
     "header"
     "image"
     "boxContainer"
+    "footer"
 }
 
 .menu{
@@ -143,3 +144,4 @@
     grid-area: box3;
 
 }
+
