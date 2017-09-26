@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {MatMenuModule, MatSidenavModule} from '@angular/material';
-
+import {MatMenuModule, MatSidenavModule, MatIconModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
@@ -33,6 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatSidenavModule,
+    MatIconModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
