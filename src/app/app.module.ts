@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CssgridComponent } from './components/cssgrid/cssgrid.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     MenuComponent,
     CssgridComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
     
   ],
   imports: [
