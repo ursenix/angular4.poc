@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {IContact} from './models/IContact';
+//import {IContact} from '../../models/IContact';
 
 @Component({
   selector: 'app-cssgrid',
@@ -8,11 +8,15 @@ import {IContact} from './models/IContact';
 })
 export class CssgridComponent implements OnInit {
 
-  
 
-  constructor() { }
+  constructor() { 
+      
+  }
 
   ngOnInit() {
+    
   }
+
+  
 
 }
