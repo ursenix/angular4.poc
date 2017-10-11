@@ -1,20 +1,26 @@
 <form [formGroup] = "signupForm" (ngSubmit) = "onSubmit()">
-
+<div class="form-container">
       <div class="form-group">
+          <label>First Name</label>
         <input type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="First Name">
-        <span
-          *ngIf="!signupForm.get('firstname').valid && signupForm.get('firstname').touched"
-          class="help-block"> Please Enter First Name (Minimum 2 Characters)</span>
+        <div *ngIf="!signupForm.get('firstname').valid && signupForm.get('firstname').touched" class="alert"> Please Enter First Name (Minimum 2 Characters)</div>
       </div>
       <div class="form-group">
+          <label>Last Name</label>
         <input type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Last Name">
-        <span
-          *ngIf="!signupForm.get('lastname').valid && signupForm.get('lastname').touched"
-          class="help-block"> Please Enter Last Name (Minimum 2 Characters)</span>
+        <div class="alert" *ngIf="!signupForm.get('lastname').valid && signupForm.get('lastname').touched"> Please Enter Last Name (Minimum 2 Characters)</div>
       </div>
-
+    <div class="form-group">
+        <label>E-Mail</label>
+        <input type="email" id="email" name="email" formControlName="email" placeholder="E-mail">
+        <div *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched" class="alert"> Please Enter Your Valid E-Mail ID</div>
+      </div>
       <div class="form-group">
-      <button type="submit" class="btn btn-success btn-lg btn-qte" >Create Account</button>
+      <label>Description</label>
+          <textarea  formControlName="description"></textarea>        
       </div>
-
+      <div class="form-group">
+      <button type="submit" class="btn btn-success btn-lg btn-qte" >Send</button>
+      </div>
+</div>
     </form>

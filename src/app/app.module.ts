@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {MatMenuModule, MatSidenavModule, MatIconModule} from '@angular/material';
 
@@ -34,10 +35,13 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,   
+    ReactiveFormsModule,
     MatMenuModule,
     MatSidenavModule,
     MatIconModule,
     RouterModule.forRoot(routes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
