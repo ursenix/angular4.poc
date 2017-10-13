@@ -4,13 +4,47 @@
     padding:2em;
     margin: 2em auto;
     background:#fff;
-    float:right;
+   
+}
+
+h1{
+font-family: adobe-garamond-pro;
+}
+
+h3{
+font-family: adobe-garamond-pro;
+}
+
+p{
+font-family: adobe-garamond-pro;
+font-size: 20px;
 }
 
 .row > .form-container:first-child {
     float: left;
 }
 
+/*.rTableBody 
+{ display: table-row-group; 
+  word-wrap:break-word;
+}
+.rTableRow { 
+    display: table-row; 
+    word-wrap:break-word; 
+    }
+.rTableCell { 
+display: table-cell;
+word-wrap:break-word;
+}
+.rTableCells 
+{ 
+    width:20%;                          
+}*/
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
 
 .button {
     margin-top: 3rem;

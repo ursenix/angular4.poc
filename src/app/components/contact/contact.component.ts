@@ -12,10 +12,10 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   this.signupForm = new FormGroup({
     'firstname' : new FormControl(null, [Validators.required, Validators.minLength(2)]),
-    'lastname': new FormControl(null, [Validators.required, Validators.minLength(2),]), 
+    'lastname': new FormControl(null, [Validators.required, Validators.minLength(2)]), 
     'phonenumber' : new FormControl(null, [Validators.required]),
     'email' : new FormControl(null, [Validators.required, Validators.email]),
-    'description' : new FormControl(null, [Validators.required]),
+    'description' : new FormControl(null, [Validators.required, Validators.minLength(100)]),
     //'email': new FormControl('', [Validators.required,Validators.pattern("[^ @]*@[^ @]*")])  
 
   });

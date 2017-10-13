@@ -7,10 +7,12 @@
 	width: 100%;
 	grid-area: footer;
 	margin-top: 30px;
+	/*background-image:url(/assets/footerimage.jpg);*/
 }
 .footer .top {
 	background: #232323;
 	padding: 48px 0;
+	/*background-image:url(/assets/footerimage.jpg);*/
 }
 .footer .bottom {
 	background: #1c1c1c;

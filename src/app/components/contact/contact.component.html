@@ -1,28 +1,47 @@
- <div class="row">
-<form [formGroup] = "signupForm" (ngSubmit) = "onSubmit()">
+<div class="container row">
+    <div class="col-md-7">
+
+<h1>Contact Today</h1>
+
+<p>Please feel free to reach out to me if you have any questions or comments about the services I offer. Also, you could always just send me a friendly hello.</p>
+<div >
+    <h3><u>Contact Address</u></h3>
+<span><md-icon>home</md-icon> 25/34, Ground Flr, Nainiappa Street,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chintadripet, Chennai.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TamilNadu, India.</span>
+</div>
+
+    </div>
+    <div class="col-md-5">
+<form class="form-horizontal" [formGroup] = "signupForm" (ngSubmit) = "onSubmit()">
+    
 <div class="form-container">
       <div class="form-group">
-          <label>First Name</label>
-        <input type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="First Name">
+        <label class="control-label">First Name:</label>
+        <input class="form-control" type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="First Name">
         <div *ngIf="!signupForm.get('firstname').valid && signupForm.get('firstname').touched" class="alert"> Please Enter First Name (Minimum 2 Characters)</div>
-      </div>
+      </div>     
+      
       <div class="form-group">
-          <label>Last Name</label>
-        <input type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Last Name">
+          <label>Last Name:</label>
+        <input class="form-control" type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Last Name">
         <div class="alert" *ngIf="!signupForm.get('lastname').valid && signupForm.get('lastname').touched"> Please Enter Last Name (Minimum 2 Characters)</div>
-      </div>
+      </div>   
+ 
     <div class="form-group">
-        <label>E-Mail</label>
-        <input type="email" id="email" name="email" formControlName="email" placeholder="E-mail">
+        <label for="email">E-Mail:</label>
+        <input class="form-control" type="email" id="email" name="email" formControlName="email" placeholder="E-mail">
         <div class="alert" *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched"> Please Enter Your Valid E-Mail ID</div>
-      </div>
+      </div> 
       <div class="form-group">
-      <label>Description</label>
-          <textarea  formControlName="description"></textarea>        
+      <label>Description:</label>
+          <textarea  class="form-control" rows="5" formControlName="description"></textarea>
+        <div class="alert" *ngIf="!signupForm.get('description').valid && signupForm.get('description').touched"> Please describe Minimum of 150 Characters</div>        
       </div>
+        
       <div class="form-group">
       <button type="submit" class="btn btn-success btn-lg btn-qte" >Send</button>
       </div>
+  
 </div>
     </form>
     </div>
+</div>
