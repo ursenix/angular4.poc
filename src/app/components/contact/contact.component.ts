@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
     'lastname': new FormControl(null, [Validators.required, Validators.minLength(2),]), 
     'phonenumber' : new FormControl(null, [Validators.required]),
     'email' : new FormControl(null, [Validators.required, Validators.email]),
+    'description' : new FormControl(null, [Validators.required]),
     //'email': new FormControl('', [Validators.required,Validators.pattern("[^ @]*@[^ @]*")])  
 
   });

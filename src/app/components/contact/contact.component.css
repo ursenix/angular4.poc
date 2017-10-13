@@ -1,9 +1,14 @@
 .form-container {
     display:block;
-    width:90%;
+   /*width:90%;*/
     padding:2em;
     margin: 2em auto;
     background:#fff;
+    float:right;
+}
+
+.row > .form-container:first-child {
+    float: left;
 }
 
 
